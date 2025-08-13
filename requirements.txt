@@ -1,0 +1,4 @@
+pdfminer.six
+pypdfium2
+pytesseract
+pytest
