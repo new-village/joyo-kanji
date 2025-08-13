@@ -37,3 +37,15 @@ def test_every_mapping_char_replaced_to_expected():
 
 def test_empty_string():
     assert joyokanji.convert("") == ""
+
+
+def test_variants_default_off():
+    # characters like 髙 or 𠮷 should not change unless variants=True
+    text = "髙橋𠮷野屋"
+    assert joyokanji.convert(text) == text
+
+
+def test_variants_on_changes_applied():
+    text = "髙橋𠮷野屋﨑田隆之介突練視難響羽"
+    expected = "高橋吉野屋崎田隆之介突練視難響羽"
+    assert joyokanji.convert(text, variants=True) == expected
