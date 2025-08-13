@@ -1,4 +1,5 @@
-# joyo-kanji
+# joyo-kanji  
+[![tests](https://github.com/new-village/joyo-kanji/actions/workflows/tests.yml/badge.svg)](https://github.com/new-village/joyo-kanji/actions/workflows/tests.yml) ![PyPI - Version](https://img.shields.io/pypi/v/joyokanji)
   
 [日本語](./README_Ja.md) / [English](./README.md)  
   
